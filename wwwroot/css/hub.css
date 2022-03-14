@@ -1,0 +1,25 @@
+.chat-box {
+    border: solid 1px #333;
+    height: 50vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.chat-box .item-chat {
+    border: solid 1px rgb(136, 147, 248);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+    word-wrap: break-word;
+    display: block;
+}
+
+#messagesList {
+    /* display: grid; */
+    flex-direction: column;
+}
+
+#input-message-box {
+    display: flex;
+    bottom: 1px;
+}

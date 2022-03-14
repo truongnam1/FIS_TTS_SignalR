@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+    <div class="col-6">&nbsp;</div>
+    <div class="col-6">
+    User..........<input type="text" id="userInput" />
+    <br />
+    Message...<input type="text" id="messageInput" />
+    <input type="button" id="sendButton" value="Send Message" />
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <hr />
+    </div>
+    </div>
+    <div class="row">
+    <ul id="messagesList"></ul>
+    </div>
+    </div> *@
+
+<div class="container">
+    <div class="row">
+        <span>số người trực tuyến : </span> <span id="user-online-amount">0</span>
+    </div>
+    @* <div class="row">
+
+        </div> *@
+    <div class="row">
+        <div class="col-4">
+            <span class="col-4">username:</span>
+            <input class="col-4" type="text" id="username-input">
+            <button id="submit-username" class="btn btn-primary">OK</button>
+            <div>
+                <span>Cách gửi tin: </span>
+                <select id="optionMessage">
+                    <option value="all">all</option>
+                    <option value="other">other</option>
+                    <option value="myself">myself</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-8">
+
+            <div class="chat-box" id="messagesList"></div>
+            <div class="" id="input-message-box">
+                <textarea type="text" class="form-control" id="messageInput"> </textarea>
+                <button class="btn btn-secondary" id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts
+{
+<script src="~/lib/aspnet/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/hub.js"></script>
+}
+
+@section Styles
+{
+<link rel="stylesheet" href="~/css/hub.css">
+}
